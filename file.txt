@@ -1,0 +1,14 @@
+{
+    "entrada_original": "listar diretorios",
+    "classificacao_intent": {
+        "label": "SEARCH",
+        "rank": 1,
+        "confidence": 0.3235
+    },
+    "contexto_banco_dados": {
+        "comando": "docker images",
+        "categoria": "docker",
+        "descricao": "Lista imagens Docker locais",
+        "vector_search_distance": 0.9403007626533508
+    }
+}
