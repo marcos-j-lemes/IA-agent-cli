@@ -1,0 +1,398 @@
+[
+  {
+    "id": "docker_01",
+    "text": "Quais containers do docker estão rodando agora?",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker ps",
+      "descricao": "Lista containers em execução"
+    }
+  },
+  {
+    "id": "docker_02",
+    "text": "Mostra todos os containers, inclusive os que estão parados.",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker ps -a",
+      "descricao": "Lista todos os containers"
+    }
+  },
+  {
+    "id": "docker_03",
+    "text": "Quero ver os logs do container de nome 'api-prod'",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker logs api-prod",
+      "descricao": "Visualiza logs de um container específico"
+    }
+  },
+  {
+    "id": "docker_04",
+    "text": "Parar o container de id abc1234",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker stop abc1234",
+      "descricao": "Para um container pelo ID"
+    }
+  },
+  {
+    "id": "docker_05",
+    "text": "Como faço para forçar a remoção de um container que não quer parar?",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker rm -f <container_id_ou_nome>",
+      "descricao": "Força a remoção de um container"
+    }
+  },
+  {
+    "id": "docker_06",
+    "text": "Listar imagens docker baixadas na máquina",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker images",
+      "descricao": "Lista imagens Docker locais"
+    }
+  },
+  {
+    "id": "docker_07",
+    "text": "Preciso limpar imagens e containers que não estão sendo usados, liberar espaço.",
+    "metadata": {
+      "categoria": "docker",
+      "comando": "docker system prune -a",
+      "descricao": "Limpa recursos não utilizados do Docker"
+    }
+  },
+  {
+    "id": "git_01",
+    "text": "Qual o status atual do meu repositório git? Tem algo pendente?",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git status",
+      "descricao": "Verifica o status do repositório"
+    }
+  },
+  {
+    "id": "git_02",
+    "text": "Adicionar todos os arquivos modificados para o commit",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git add .",
+      "descricao": "Adiciona todas as mudanças ao staging"
+    }
+  },
+  {
+    "id": "git_03",
+    "text": "Fazer commit das alterações com a mensagem 'ajuste no login'",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git commit -m \"ajuste no login\"",
+      "descricao": "Cria um commit com mensagem"
+    }
+  },
+  {
+    "id": "git_04",
+    "text": "Enviar meu código para o repositório remoto na nuvem",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git push origin HEAD",
+      "descricao": "Envia commits para o repositório remoto"
+    }
+  },
+  {
+    "id": "git_05",
+    "text": "Baixar as últimas atualizações do branch principal",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git pull origin main",
+      "descricao": "Puxa atualizações do repositório remoto"
+    }
+  },
+  {
+    "id": "git_06",
+    "text": "Criar e já mudar para uma nova branch chamada 'feature/dashboard'",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git checkout -b feature/dashboard",
+      "descricao": "Cria e muda para um novo branch"
+    }
+  },
+  {
+    "id": "git_07",
+    "text": "Mostrar o histórico de commits com os detalhes em formato bonito",
+    "metadata": {
+      "categoria": "git",
+      "comando": "git log --oneline --graph",
+      "descricao": "Mostra histórico de commits de forma resumida"
+    }
+  },
+  {
+    "id": "sys_01",
+    "text": "Quanto de memória RAM o servidor está usando agora?",
+    "metadata": {
+      "categoria": "sistema",
+      "comando": "free -h",
+      "descricao": "Mostra uso da memória RAM"
+    }
+  },
+  {
+    "id": "sys_02",
+    "text": "O disco do servidor está cheio? Quanto espaço tenho?",
+    "metadata": {
+      "categoria": "sistema",
+      "comando": "df -h",
+      "descricao": "Mostra uso do disco"
+    }
+  },
+  {
+    "id": "sys_03",
+    "text": "Quais processos estão consumindo mais CPU?",
+    "metadata": {
+      "categoria": "sistema",
+      "comando": "top -b -n 1 -o +%CPU | head -20",
+      "descricao": "Lista processos por uso de CPU"
+    }
+  },
+  {
+    "id": "sys_04",
+    "text": "A quanto tempo o servidor está ligado sem reiniciar?",
+    "metadata": {
+      "categoria": "sistema",
+      "comando": "uptime",
+      "descricao": "Mostra o tempo de atividade do servidor"
+    }
+  },
+  {
+    "id": "sys_05",
+    "text": "Quanto espaço cada pasta está ocupando no diretório atual?",
+    "metadata": {
+      "categoria": "sistema",
+      "comando": "du -sh *",
+      "descricao": "Mostra tamanho das pastas no diretório atual"
+    }
+  },
+  {
+    "id": "files_01",
+    "text": "Procurar um arquivo chamado 'config.yaml' em todo o sistema",
+    "metadata": {
+      "categoria": "arquivos",
+      "comando": "find / -name config.yaml 2>/dev/null",
+      "descricao": "Busca arquivo por nome no sistema inteiro"
+    }
+  },
+  {
+    "id": "files_02",
+    "text": "Achar todos os arquivos com extensão .log modificados na última hora",
+    "metadata": {
+      "categoria": "arquivos",
+      "comando": "find . -name \"*.log\" -mmin -60",
+      "descricao": "Busca arquivos modificados recentemente"
+    }
+  },
+  {
+    "id": "files_03",
+    "text": "Buscar a palavra 'erro' dentro de todos os arquivos de texto dessa pasta",
+    "metadata": {
+      "categoria": "arquivos",
+      "comando": "grep -rn \"erro\" .",
+      "descricao": "Busca texto dentro de arquivos recursivamente"
+    }
+  },
+  {
+    "id": "files_04",
+    "text": "Quero ver o final do arquivo access.log, e quero que atualize sozinho",
+    "metadata": {
+      "categoria": "arquivos",
+      "comando": "tail -f access.log",
+      "descricao": "Monitora o final de um arquivo em tempo real"
+    }
+  },
+  {
+    "id": "files_05",
+    "text": "Permissão negada ao rodar o script.sh. Como dou permissão de execução?",
+    "metadata": {
+      "categoria": "arquivos",
+      "comando": "chmod +x script.sh",
+      "descricao": "Dá permissão de execução a um arquivo"
+    }
+  },
+  {
+    "id": "files_06",
+    "text": "Contar quantas linhas tem o arquivo dataset.csv",
+    "metadata": {
+      "categoria": "arquivos",
+      "comando": "wc -l dataset.csv",
+      "descricao": "Conta linhas de um arquivo"
+    }
+  },
+  {
+    "id": "net_01",
+    "text": "Está caindo internet, quero testar o ping para o google",
+    "metadata": {
+      "categoria": "rede",
+      "comando": "ping -c 4 8.8.8.8",
+      "descricao": "Testa conectividade com ping"
+    }
+  },
+  {
+    "id": "net_02",
+    "text": "Quais portas TCP estão abertas e escutando neste servidor?",
+    "metadata": {
+      "categoria": "rede",
+      "comando": "ss -tulnp",
+      "descricao": "Lista portas abertas no servidor"
+    }
+  },
+  {
+    "id": "net_03",
+    "text": "Descobrir qual processo está usando a porta 8080",
+    "metadata": {
+      "categoria": "rede",
+      "comando": "lsof -i :8080",
+      "descricao": "Encontra processo por porta"
+    }
+  },
+  {
+    "id": "net_04",
+    "text": "Qual o IP público dessa máquina?",
+    "metadata": {
+      "categoria": "rede",
+      "comando": "curl ifconfig.me",
+      "descricao": "Retorna o IP público da máquina"
+    }
+  },
+  {
+    "id": "net_05",
+    "text": "Testar se a API no localhost na porta 3000 está respondendo",
+    "metadata": {
+      "categoria": "rede",
+      "comando": "curl -I http://localhost:3000",
+      "descricao": "Testa resposta HTTP de um endpoint local"
+    }
+  },
+  {
+    "id": "db_01",
+    "text": "Entrar no banco de dados PostgreSQL usando o usuário admin",
+    "metadata": {
+      "categoria": "banco_de_dados",
+      "comando": "psql -U admin",
+      "descricao": "Conecta ao PostgreSQL via CLI"
+    }
+  },
+  {
+    "id": "db_02",
+    "text": "Fazer backup do banco MySQL chamado 'empresa' e salvar num arquivo sql",
+    "metadata": {
+      "categoria": "banco_de_dados",
+      "comando": "mysqldump -u root -p empresa > backup_empresa.sql",
+      "descricao": "Exporta backup de banco MySQL"
+    }
+  },
+  {
+    "id": "db_03",
+    "text": "Listar todos os bancos de dados existentes no MySQL",
+    "metadata": {
+      "categoria": "banco_de_dados",
+      "comando": "mysql -e \"SHOW DATABASES;\"",
+      "descricao": "Lista bancos de dados MySQL"
+    }
+  },
+  {
+    "id": "pkg_01",
+    "text": "Atualizar os pacotes do sistema operacional linux",
+    "metadata": {
+      "categoria": "pacotes",
+      "comando": "sudo apt update && sudo apt upgrade -y",
+      "descricao": "Atualiza pacotes no Linux (Debian/Ubuntu)"
+    }
+  },
+  {
+    "id": "pkg_02",
+    "text": "Instalar o pacote 'htop' para monitorar processos",
+    "metadata": {
+      "categoria": "pacotes",
+      "comando": "sudo apt install htop -y",
+      "descricao": "Instala pacote via apt"
+    }
+  },
+  {
+    "id": "pkg_03",
+    "text": "Verificar se o pacote 'nginx' está instalado",
+    "metadata": {
+      "categoria": "pacotes",
+      "comando": "dpkg -l | grep nginx",
+      "descricao": "Verifica se pacote está instalado"
+    }
+  },
+  {
+    "id": "node_01",
+    "text": "Instalar as dependências do meu projeto node",
+    "metadata": {
+      "categoria": "node",
+      "comando": "npm install",
+      "descricao": "Instala dependências do package.json"
+    }
+  },
+  {
+    "id": "node_02",
+    "text": "Rodar os testes automatizados do projeto",
+    "metadata": {
+      "categoria": "node",
+      "comando": "npm test",
+      "descricao": "Executa scripts de teste do npm"
+    }
+  },
+  {
+    "id": "node_03",
+    "text": "Iniciar a aplicação node em modo de produção",
+    "metadata": {
+      "categoria": "node",
+      "comando": "npm run start",
+      "descricao": "Inicia aplicação Node.js"
+    }
+  },
+  {
+    "id": "python_01",
+    "text": "Criar e ativar um ambiente virtual python",
+    "metadata": {
+      "categoria": "python",
+      "comando": "python3 -m venv venv && source venv/bin/activate",
+      "descricao": "Cria e ativa venv Python"
+    }
+  },
+  {
+    "id": "python_02",
+    "text": "Instalar as bibliotecas listadas no requirements.txt",
+    "metadata": {
+      "categoria": "python",
+      "comando": "pip install -r requirements.txt",
+      "descricao": "Instala dependências Python"
+    }
+  },
+  {
+    "id": "k8s_01",
+    "text": "Listar todos os pods do cluster kubernetes no namespace default",
+    "metadata": {
+      "categoria": "kubernetes",
+      "comando": "kubectl get pods",
+      "descricao": "Lista pods no Kubernetes"
+    }
+  },
+  {
+    "id": "k8s_02",
+    "text": "Pegar os logs do pod chamado 'api-server-pod'",
+    "metadata": {
+      "categoria": "kubernetes",
+      "comando": "kubectl logs api-server-pod",
+      "descricao": "Visualiza logs de um Pod"
+    }
+  },
+  {
+    "id": "k8s_03",
+    "text": "Verificar o consumo de recursos (cpu/memória) dos pods",
+    "metadata": {
+      "categoria": "kubernetes",
+      "comando": "kubectl top pods",
+      "descricao": "Métricas de uso dos pods"
+    }
+  }
+]
