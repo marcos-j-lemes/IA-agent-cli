@@ -1,0 +1,12 @@
+[
+  {"text": "show me all running docker containers", "label": "SEARCH", "rank": 1},
+  {"text": "find files modified in the last 24 hours", "label": "SEARCH", "rank": 2},
+  {"text": "search for all hardcoded passwords in the codebase", "label": "SEARCH", "rank": 3},
+  {"text": "create a new git branch called feature/auth", "label": "CREATE", "rank": 1},
+  {"text": "write a python script to parse CSV files", "label": "CREATE", "rank": 3},
+  {"text": "build a microservice with kafka integration", "label": "CREATE", "rank": 5},
+  {"text": "what is my current timezone", "label": "QUESTION", "rank": 1},
+  {"text": "why is nginx returning 502 errors", "label": "QUESTION", "rank": 3},
+  {"text": "how do I configure ssl certificates for nginx", "label": "QUESTION", "rank": 4},
+  {"text": "xyzzy plugh", "label": "UNKNOWN", "rank": 1}
+]
