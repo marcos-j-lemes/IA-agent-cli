@@ -1,14 +1,14 @@
 {
-    "entrada_original": "listar diretorios",
+    "entrada_original": "aoi",
     "classificacao_intent": {
         "label": "SEARCH",
         "rank": 1,
-        "confidence": 0.3235
+        "confidence": 0.2512
     },
     "contexto_banco_dados": {
-        "comando": "docker images",
-        "categoria": "docker",
-        "descricao": "Lista imagens Docker locais",
-        "vector_search_distance": 0.9403007626533508
+        "comando": "git status",
+        "descricao": "Verifica o status do repositório",
+        "categoria": "git",
+        "vector_search_distance": 1.420336127281189
     }
 }

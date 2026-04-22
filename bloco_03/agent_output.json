@@ -1,0 +1,75 @@
+{
+    "entrada_original": "aoi",
+    "classificacao_intent": {
+        "text": "aoi",
+        "label": "SEARCH",
+        "rank": 1,
+        "confidence": 0.2512,
+        "scores": {
+            "CREATE": 0.251,
+            "QUESTION": 0.2495,
+            "SEARCH": 0.2512,
+            "UNKNOWN": 0.2483
+        }
+    },
+    "contexto_banco_dados": {
+        "comando": "docker images",
+        "categoria": "docker",
+        "descricao": "Lista imagens Docker locais",
+        "vector_search_distance": 1.0
+    },
+    "validacao": {
+        "trust_score": 0.5254,
+        "decision": "CONFIRM",
+        "signals": [
+            {
+                "name": "intent_confidence",
+                "weight": 0.3,
+                "value": 0.2512,
+                "contribution": 0.0754,
+                "status": "fail",
+                "reason": "Classifier confidence 0.25 is low — intent unclear"
+            },
+            {
+                "name": "vector_distance",
+                "weight": 0.3,
+                "value": 0.1667,
+                "contribution": 0.05,
+                "status": "fail",
+                "reason": "DB match distance 1.000 — poor match, command may be wrong"
+            },
+            {
+                "name": "rank_coherence",
+                "weight": 0.2,
+                "value": 1.0,
+                "contribution": 0.2,
+                "status": "ok",
+                "reason": "Rank coherent: intent=1, command≈1"
+            },
+            {
+                "name": "language_coherence",
+                "weight": 0.1,
+                "value": 1.0,
+                "contribution": 0.1,
+                "status": "ok",
+                "reason": "Input is 'unknown', command is a valid shell command (language-neutral)"
+            },
+            {
+                "name": "category_command_fit",
+                "weight": 0.1,
+                "value": 1.0,
+                "contribution": 0.1,
+                "status": "ok",
+                "reason": "Category 'docker' fits intent 'SEARCH'"
+            }
+        ],
+        "summary": "Moderate trust (0.53) — confirm before running 'docker images'. Issues: Classifier confidence 0.25 is low — intent unclear; DB match distance 1.000 — poor match, command may be wrong",
+        "destructive": false,
+        "thresholds": {
+            "execute": 0.65,
+            "confirm": 0.4
+        }
+    },
+    "decision": "CONFIRM",
+    "command": "docker images"
+}

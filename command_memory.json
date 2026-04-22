@@ -1,0 +1,52 @@
+[
+    {
+        "timestamp": "2026-04-22T19:46:52.696895Z",
+        "input": "lista os arquivos do diretorio atual",
+        "command": "ls",
+        "decision": "EXECUTE",
+        "executed": true,
+        "output": "README.md\n__pycache__\nbloco_01\nbloco_02\nbloco_03\nfile.txt\nmodelos\norquestrador.py\nrequirements.txt",
+        "error": "",
+        "already_executed": false
+    },
+    {
+        "timestamp": "2026-04-22T19:48:03.012702Z",
+        "input": "baixa a biblioteca pytorch",
+        "command": "uname -a",
+        "decision": "CONFIRM",
+        "executed": false,
+        "output": null,
+        "error": null,
+        "already_executed": false
+    },
+    {
+        "timestamp": "2026-04-22T19:48:24.738639Z",
+        "input": "crie uma nova pasta ",
+        "command": "docker images",
+        "decision": "CONFIRM",
+        "executed": true,
+        "output": "IMAGE   ID             DISK USAGE   CONTENT SIZE   EXTRA",
+        "error": "WARNING: This output is designed for human readability. For machine-readable output, please use --format.",
+        "already_executed": false
+    },
+    {
+        "timestamp": "2026-04-22T19:49:06.201488Z",
+        "input": "ls",
+        "command": "ls",
+        "decision": "CONFIRM",
+        "executed": false,
+        "output": "README.md\n__pycache__\nbloco_01\nbloco_02\nbloco_03\nfile.txt\nmodelos\norquestrador.py\nrequirements.txt",
+        "error": "",
+        "already_executed": true
+    },
+    {
+        "timestamp": "2026-04-22T19:49:09.547895Z",
+        "input": "aoi",
+        "command": "docker images",
+        "decision": "CONFIRM",
+        "executed": false,
+        "output": "IMAGE   ID             DISK USAGE   CONTENT SIZE   EXTRA",
+        "error": "WARNING: This output is designed for human readability. For machine-readable output, please use --format.",
+        "already_executed": true
+    }
+]
